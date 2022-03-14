@@ -50,6 +50,11 @@ body {
 
 /* reset */
 
+::selection {
+    background: #FFFFFF;
+    color: #FED100;
+}
+
 .wrapper {
     min-height: 100%;
     overflow: hidden;
@@ -86,6 +91,11 @@ body {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
+    cursor: pointer;
+}
+
+.nav li:hover {
+    color: #FF352B;
 }
 
 .number span {
@@ -128,6 +138,7 @@ body {
     background: #FF352B;
     box-shadow: 6px 5px 0 white;
     transition: .4s;
+    cursor: pointer;
 }
 
 .head-btn button:hover {
@@ -202,10 +213,161 @@ body {
     gap: 56px;
 }
 
-.price h3 {
-    margin: 15px 0px 0px 0px;
+.price h3,
+.car-park h3 {
+    margin: 15px 0px 60px 0px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     text-align: center;
+}
+
+.price-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-item {
+    width: 420px;
+    height: 550px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.price-item:hover {
+    border: 1px solid rgba(254, 209, 0, 1);
+}
+
+.price-title {
+    padding: 85px 0px 35px 0px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.price-avg {
+    padding: 25px 0px 0px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-num {
+    padding: 65px 0px 50px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.price-btn {
+    width: 250px;
+    height: 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FED100;
+}
+
+.price-btn:hover {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.car-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 0px 50px 0px;
+}
+
+.car-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    width: 201px;
+    height: 50px;
+    border: 1px solid #EBEBEB;
+    cursor: pointer;
+}
+
+.car-btn:hover {
+    border: 1px solid rgba(254, 209, 0, 1);
+}
+
+.reviews {
+    background: #FED100;
+}
+
+.reviews-cards {
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review-item {
+    padding: 0px 0px 60px 0px;
+}
+
+.review-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.date {
+    padding: 10px 0px 20px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.review-content {
+    max-width: 420px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0px 0px 18px 0px;
+}
+
+.read-more {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.review-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #333333;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background: none;
+    cursor: pointer;
+}
+
+.review-btn button:hover {
+    border: none;
+    background: #FFFFFF;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 60px 0px;
 }
