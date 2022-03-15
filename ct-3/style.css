@@ -50,10 +50,11 @@ body {
 
 /* reset */
 
-::selection {
+
+/* ::selection {
     background: #FFFFFF;
     color: #FED100;
-}
+} */
 
 .wrapper {
     min-height: 100%;
@@ -94,15 +95,18 @@ body {
     cursor: pointer;
 }
 
-.nav li:hover {
-    color: #FF352B;
-}
-
-.number span {
+.number a {
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     text-decoration: underline;
+    color: #333333;
+}
+
+.nav li:hover,
+.read-more:hover,
+.number a:hover {
+    color: #FF352B;
 }
 
 .head-main h1 {
@@ -344,6 +348,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .review-btn button {
@@ -370,4 +376,49 @@ body {
     display: flex;
     justify-content: center;
     padding: 0px 0px 60px 0px;
+}
+
+.car-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.car-prop {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 35px 0;
+}
+
+.car-prop li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.car-prop li:before {
+    content: "✔ ";
+}
+
+.car-park-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-btn-order button {
+    width: 250px;
+    height: 50px;
+    background: #FED100;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.car-btn-order button:hover {
+    font-weight: 700;
+    color: #FFFFFF;
 }
