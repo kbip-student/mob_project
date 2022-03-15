@@ -1,0 +1,424 @@
+/* reset */
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+    color: #333333;
+}
+
+
+/* reset */
+
+
+/* ::selection {
+    background: #FFFFFF;
+    color: #FED100;
+} */
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 1312px;
+    padding: 0px 15px 0px 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+.header {
+    background: #FED100;
+    height: 650px;
+    background-image: url(./img/man.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 80%;
+    background-position-y: 100%;
+}
+
+.nav-container {
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 46px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.number a {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: underline;
+    color: #333333;
+}
+
+.nav li:hover,
+.read-more:hover,
+.number a:hover {
+    color: #FF352B;
+}
+
+.head-main h1 {
+    padding: 63px 0px 0px 0px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 126.9%;
+    max-width: 480px;
+}
+
+.head-main span {
+    padding: 23px 0px 0px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.head-btn {
+    padding: 50px 0px 0px 0px;
+}
+
+.head-btn button {
+    position: relative;
+    display: inline-block;
+    width: 304px;
+    height: 60px;
+    color: #f2f2f2;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    font-family: 'Montserat';
+    background: #FF352B;
+    box-shadow: 6px 5px 0 white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.head-btn button:hover {
+    background: #FF772B;
+}
+
+.head-btn button:active {
+    box-shadow: none;
+    -webkit-transform: translate(7px, 8px);
+    transform: translate(7px, 8px);
+}
+
+.head-adv {
+    display: flex;
+    flex-direction: row;
+    padding: 76px 0px 0px 0px;
+    gap: 10px;
+}
+
+.head-adv-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.head-adv-item p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    max-width: 130px;
+}
+
+.number-step span {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.step-title h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.step-content p {
+    padding: 15px 0px 0px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.step-container {
+    padding: 7px 0px 0px 42px;
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    /* align-items: center; */
+}
+
+.steps {
+    padding: 66px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 56px;
+}
+
+.price h3,
+.car-park h3 {
+    margin: 15px 0px 60px 0px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.price-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price-item {
+    width: 420px;
+    height: 550px;
+    border: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.price-item:hover {
+    border: 1px solid rgba(254, 209, 0, 1);
+}
+
+.price-title {
+    padding: 85px 0px 35px 0px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.price-avg {
+    padding: 25px 0px 0px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-num {
+    padding: 65px 0px 50px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.price-btn {
+    width: 250px;
+    height: 50px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FED100;
+}
+
+.price-btn:hover {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.car-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0px 0px 50px 0px;
+}
+
+.car-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    width: 201px;
+    height: 50px;
+    border: 1px solid #EBEBEB;
+    cursor: pointer;
+}
+
+.car-btn:hover {
+    border: 1px solid rgba(254, 209, 0, 1);
+}
+
+.reviews {
+    background: #FED100;
+}
+
+.reviews-cards {
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review-item {
+    padding: 0px 0px 60px 0px;
+}
+
+.review-name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.date {
+    padding: 10px 0px 20px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.review-content {
+    max-width: 420px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding: 0px 0px 18px 0px;
+}
+
+.read-more {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.review-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #333333;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    background: none;
+    cursor: pointer;
+}
+
+.review-btn button:hover {
+    border: none;
+    background: #FFFFFF;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px 60px 0px;
+}
+
+.car-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.car-prop {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding: 35px 0;
+}
+
+.car-prop li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.car-prop li:before {
+    content: "✔ ";
+}
+
+.car-park-slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car-btn-order button {
+    width: 250px;
+    height: 50px;
+    background: #FED100;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.car-btn-order button:hover {
+    font-weight: 700;
+    color: #FFFFFF;
+}
