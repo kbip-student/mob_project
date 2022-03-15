@@ -105,7 +105,8 @@ body {
 
 .nav li:hover,
 .read-more:hover,
-.number a:hover {
+.number a:hover,
+.footer-first-block-content span:hover {
     color: #FF352B;
 }
 
@@ -421,4 +422,26 @@ body {
 .car-btn-order button:hover {
     font-weight: 700;
     color: #FFFFFF;
+}
+
+.footer {
+    background: #FED100;
+}
+
+.footer-container {
+    display: flex;
+    padding: 100px 0;
+}
+
+.footer-first-block-content {
+    padding: 44px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.footer-first-block-content span {
+    line-height: 130.4%;
+    max-width: 240px;
+    cursor: pointer;
 }
